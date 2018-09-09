@@ -21,13 +21,13 @@ class Problem(object):
         state. The result would typically be a list, but if there are
         many actions, consider yielding them one at a time in an
         iterator, rather than building them all at once."""
-        raise NotImplementedError
+        raise NotImplementedError()
 
     def result(self, state, action):
         """Return the state that results from executing the given
         action in the given state. The action must be one of
         self.actions(state)."""
-        raise NotImplementedError
+        raise NotImplementedError()
 
     def goal_test(self, state):
         """Return True if the state is a goal. The default method compares the
@@ -39,6 +39,10 @@ class Problem(object):
         except:
             return state == self.goal
 
+    def render(self, state):
+        """Returns a graphical depiction of the state as a string."""
+        raise NotImplementedError()
+
 class MultiProblem(Problem):
     """A problem specified by multiple simultaneous goals.
 
@@ -49,3 +53,4 @@ class MultiProblem(Problem):
     
     def goal_test(self, state):
         return all(goal(state) for goal in self.goals)
+
