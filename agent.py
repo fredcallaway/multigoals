@@ -43,6 +43,7 @@ def bfs_search(problem, goal_test=None, root=None):
             return construct_path(s, meta)
 
         seen.add(s)
+        # TODO: shuffle actions!
         for a in problem.actions(s):
             next_state = problem.result(s, a)
             # HACK we would like to check to see if our state is in q, but we settle for checking against meta
