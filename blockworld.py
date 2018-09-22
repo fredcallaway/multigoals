@@ -93,8 +93,8 @@ if __name__ == '__main__':
     problem = Blockworld(
         (('A', 'C'), ('B',), ()),
         (
-            Blockworld.make_above_predicate('A', 'B'),
             Blockworld.make_above_predicate('B', 'C'),
+            Blockworld.make_above_predicate('A', 'B'),
         ),
     )
 

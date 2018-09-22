@@ -90,11 +90,11 @@ def _subset_of_ordered_goals(problem, state, k):
     and focused on the k goals that haven't been accomplished yet.
 
     This function assumes the goals on the problem are ordered, so that an element at index i must be completed
-    before all elements at index k < i can be completed. So, we accomplish the goals at the end of the list first.
+    before all elements at index k > i can be completed. So, we accomplish the goals at the beginning of the list first.
     '''
     # Find first goal that isn't accomplished
     first_not_accomplished = None
-    for idx, goal in reversed(list(enumerate(problem.goals))):
+    for idx, goal in enumerate(problem.goals):
         if not goal(state):
             first_not_accomplished = idx
             break
@@ -102,8 +102,8 @@ def _subset_of_ordered_goals(problem, state, k):
     assert first_not_accomplished is not None,\
         'All goals were accomplished for problem {} at state {}'.format(problem, state)
 
-    goals = problem.goals[max(first_not_accomplished - k + 1, 0):first_not_accomplished + 1]
-    assert len(goals) == k or first_not_accomplished - k + 1 < 0, 'Invalid number of goals in subset'
+    goals = problem.goals[first_not_accomplished:min(first_not_accomplished + k, len(problem.goals))]
+    assert len(goals) == k or first_not_accomplished + k > len(problem.goals), 'Invalid number of goals in subset'
     return [goals]
 
 
