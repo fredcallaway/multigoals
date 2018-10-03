@@ -2,13 +2,35 @@ from problem import MultiProblem
 
 
 class Blockworld(MultiProblem):
-    def __init__(self, initial, goals):
+    '''
+    Blockworld is a problem where you stack blocks, one at a time.
+
+    >>> s = (('B',), ('C', 'A'), ())
+    >>> w = Blockworld(s, s)
+    >>> w.result(s, ('A', 2))
+    (('B',), ('C',), ('A',))
+    >>> w = Blockworld(s, s, canonicalize_states=True)
+    >>> w.initial
+    (('C', 'A'), ('B',), ())
+    >>> w.result(s, ('A', 2))
+    (('A',), ('B',), ('C',))
+    '''
+
+    def __init__(self, initial, goals, canonicalize_states=False):
+        if canonicalize_states:
+            initial = _canonicalize_blockworld_state(initial)
         super().__init__(initial, goals)
+        self.canonicalize_states = canonicalize_states
         # assert len(initial) == len(goal),\
         #    'In Blockworld, initial state and goal state must have the same number of places blocks can go.'
 
     def actions(self, state):
-        """
+        """Returns set of actions that can be taken from this state.
+
+        Actions are encoded as a pair. The first element of the pair
+        is the label of the block that will be moved. The second element
+        of the pair is the index of the column the block will be moved to.
+
         >>> s = (('A', 'C'), ('B',), ())
         >>> w = Blockworld(s, s)
         >>> w.actions(s)
@@ -25,23 +47,28 @@ class Blockworld(MultiProblem):
         ]
 
     def result(self, state, action):
-        """
-        >>> s = (('A', 'C'), ('B',), ())
+        """Returns next state following action taken at current state.
+
+        >>> s = (('B',), ('A', 'C'), ())
         >>> w = Blockworld(s, s)
-        >>> w.result(s, ('B', 0))
-        (('A', 'C', 'B'), (), ())
+        >>> w.result(s, ('B', 1))
+        ((), ('A', 'C', 'B'), ())
         """
         # TODO should we canonicalize this state in some way?
         # Would make it easier to avoid repeating a state in search
         source_block, dest_col_idx = action
+        # TODO/PERF to avoid searching through columns, we should consider representing actions as source/dest columns
         source_col_idx = next(colidx for colidx, col in enumerate(state) if col and col[-1] == source_block)
-        return tuple(
+        result = tuple(
             col[:-1] if colidx == source_col_idx else
             col + (source_block,) if colidx == dest_col_idx else
             # We can use the same tuple from previous state since tuples are immutable.
             col
             for colidx, col in enumerate(state)
         )
+        if self.canonicalize_states:
+            result = _canonicalize_blockworld_state(result)
+        return result
 
     def render(self, state):
         """Returns a graphical depiction of the state as a string.
@@ -86,6 +113,39 @@ class Blockworld(MultiProblem):
 
         return pred
 
+    @classmethod
+    def make_is_bottom_of_column_predicate(cls, block):
+        '''Returns a predicate that returns true when the block is the bottom block in some column.
+
+        >>> p = Blockworld.make_is_bottom_of_column_predicate('A')
+        >>> p((('A', 'C'), ('B',)))
+        True
+        >>> p((('B',), ('A', 'C'), ()))
+        True
+        >>> p((('B', 'A'), ('C',)))
+        False
+        '''
+        def pred(state):
+            return any(s[0] == block for s in state if s)
+
+        return pred
+
+
+def _canonicalize_blockworld_state(state):
+    '''
+    We canonicalize states so that taller columns are first, and ties between columns of same height are broken
+    by ordering using the topmost symbol.
+    >>> _canonicalize_blockworld_state((('A',), ('B', 'C'), ()))
+    (('B', 'C'), ('A',), ())
+    >>> _canonicalize_blockworld_state(((), ('D', 'A',), ('B', 'C')))
+    (('D', 'A'), ('B', 'C'), ())
+    >>> _canonicalize_blockworld_state((('B',), ('A',)))
+    (('A',), ('B',))
+    '''
+    return tuple(sorted(
+        state,
+        key=lambda column: (-len(column), column[-1] if column else None)))
+
 
 if __name__ == '__main__':
     # HACK how should we deal with open spaces? Should we permit an unlimited number?
@@ -99,29 +159,28 @@ if __name__ == '__main__':
     )
 
     # We are enumerating all states
-    seen = set()
-    q = [problem.initial]
-    while q:
-        s = q.pop()
-        if s in seen:
-            continue
-        seen.add(s)
-        for a in problem.actions(s):
-            next_state = problem.result(s, a)
-            if next_state not in seen:
-                q.append(next_state)
+    def _visit(problem):
+        seen = set()
+        q = [problem.initial]
+        while q:
+            s = q.pop()
+            if s in seen:
+                continue
+            seen.add(s)
+            for a in problem.actions(s):
+                next_state = problem.result(s, a)
+                if next_state not in seen:
+                    q.append(next_state)
+        return seen
+    seen = _visit(problem)
     print('Total number of states:', len(seen))
+    assert len(seen) == 60
 
     # Implementing state canonicalization
-    def _canonicalize_blockworld_state(state):
-        # We canonicalize states so that taller columns are first, and ties between columns of same height are broken
-        # by ordering using the topmost symbol.
-        return tuple(sorted(
-            state,
-            reverse=True,
-            key=lambda column: (len(column), column[-1] if column else None)))
-    canonicalized = set(_canonicalize_blockworld_state(s) for s in seen)
+    problem_canonicalize = Blockworld(((), ('A', 'C'), ('B',)), problem.goals, canonicalize_states=True)
+    canonicalized = _visit(problem_canonicalize)
     print('Total unique number of states:', len(canonicalized))
+    assert len(canonicalized) == 13
 
     import doctest
     fail_count, test_count = doctest.testmod()

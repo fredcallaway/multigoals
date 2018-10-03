@@ -2,6 +2,13 @@ from problem import MultiProblem
 
 
 class SimpleSpatial(MultiProblem):
+    action_to_label = {
+        (-1, 0): 'left',
+        (1, 0): 'right',
+        (0, -1): 'up',
+        (0, 1): 'down',
+    }
+
     def __init__(self, initial, map, goals):
         '''
         Map format is list of strings, where the strings are rows in the map. We assume the map is rectangular.

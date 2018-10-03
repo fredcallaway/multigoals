@@ -1,12 +1,15 @@
 from queue import Queue
+from collections import deque
 import itertools
+import random
 
 
-def bfs_search(problem, goal_test=None, root=None):
+def bfs_search(problem, goal_test=None, root=None, shuffle=True):
     '''Breadth-first search that returns a series of actions to accomplish a goal in a problem.
 
     Permits custom goal_test and root node, which we use to run tree search from intermediate
-    states with changing goal_test.
+    states with changing goal_test. Can select from actions in random order, which can result in
+    differences for actions in optimal paths (but not differences in path length!).
 
     >>> from blockworld import Blockworld
     >>> problem = Blockworld((('C', 'B'), ('A',)), [lambda s: s == (('C', 'B', 'A'), ())])
@@ -21,20 +24,20 @@ def bfs_search(problem, goal_test=None, root=None):
         root = problem.initial
 
     seen = set()
-    q = Queue()
+    q = deque()
     # a dictionary to maintain meta information (used for path formation)
     # key -> (parent state, action to reach child)
     meta = dict()
 
     meta[root] = (None, None)
-    q.put(root)
+    q.append(root)
 
     # If we're at a goal state, there's no need to take action.
     if goal_test(root):
         return []
 
-    while not q.empty():
-        s = q.get()
+    while q:
+        s = q.popleft()
         if s in seen:
             continue
 
@@ -43,12 +46,14 @@ def bfs_search(problem, goal_test=None, root=None):
             return construct_path(s, meta)
 
         seen.add(s)
-        # TODO: shuffle actions!
-        for a in problem.actions(s):
+        actions = problem.actions(s)
+        if shuffle:
+            random.shuffle(actions)
+        for a in actions:
             next_state = problem.result(s, a)
             # HACK we would like to check to see if our state is in q, but we settle for checking against meta
             if next_state not in meta and next_state not in seen:
-                q.put(next_state)
+                q.append(next_state)
                 meta[next_state] = (s, a)  # create metadata for these nodes
 
 
@@ -105,6 +110,39 @@ def _subset_of_ordered_goals(problem, state, k):
     goals = problem.goals[first_not_accomplished:min(first_not_accomplished + k, len(problem.goals))]
     assert len(goals) == k or first_not_accomplished + k > len(problem.goals), 'Invalid number of goals in subset'
     return [goals]
+
+
+def solve_using_ordered_goal_subset(problem, k=1, debug=False, action_limit=30):
+    '''
+    This function returns an action plan, considering a problem with goals that can be considered in order.
+    '''
+    s = problem.initial
+    completed = False
+    history = [(None, s)]
+    while True and len(history) < action_limit:
+        if debug:
+            print('State at t={}'.format(len(history)))
+            print(problem.render(s))
+        if problem.goal_test(s):
+            completed = True
+            break
+
+        # We find the shortest path that satisfies our subset of goals...
+        subsets = _subset_of_ordered_goals(problem, s, k)
+        assert len(subsets) == 1, 'Expected 1 goal subset to be returned.'
+        subset_goals = subsets[0]
+        actions = bfs_search(
+            problem,
+            root=s,
+            goal_test=lambda state: all(g(state) for g in subset_goals))
+
+        # And take first action in this path.
+        action = actions[0]
+        s = problem.result(s, action)
+
+        history.append((action, s))
+
+    return history, completed
 
 
 def _considering_a_subset_of_goals(problem, k=1, subset_fn=_all_goal_combinations, debug=False):
