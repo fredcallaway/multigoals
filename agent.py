@@ -1,4 +1,3 @@
-from queue import Queue
 from collections import deque
 import itertools
 import random
@@ -112,7 +111,57 @@ def _subset_of_ordered_goals(problem, state, k):
     return [goals]
 
 
-def solve_using_ordered_goal_subset(problem, k=1, debug=False, action_limit=30):
+def solve_using_ordered_goal_subset_perf1(problem, k=1, debug=False, action_limit=30, shuffle=True):
+    '''
+    This function returns an action plan, considering a problem with goals that can be considered in order.
+
+    This variant of solve_using_ordered_goal_subset avoids replanning when possible, preferring to follow
+    plans that have already been made. So, in general, this will run bfs_search once for each goal,
+    as opposed to what solve_using_ordered_goal_subset does, which is run bfs_search once for each action.
+    '''
+    s = problem.initial
+    completed = False
+    history = [(None, s)]
+    if debug:
+        print('State at t={}'.format(len(history)))
+        print(problem.render(s), end='')
+    while True and len(history) < action_limit:
+        if problem.goal_test(s):
+            completed = True
+            break
+
+        # We find the shortest path that satisfies our subset of goals...
+        subsets = _subset_of_ordered_goals(problem, s, k)
+        assert len(subsets) == 1, 'Expected 1 goal subset to be returned.'
+        subset_goals = subsets[0]
+        next_goal = subset_goals[0]
+        assert not next_goal(s), 'We picked a goal that was already satisfied??'
+
+        actions = bfs_search(
+            problem,
+            root=s,
+            shuffle=shuffle,
+            goal_test=lambda state: all(g(state) for g in subset_goals))
+
+        for action in actions:
+            s = problem.result(s, action)
+
+            history.append((action, s))
+
+            if debug:
+                print(f'\nState at t={len(history)}')
+                print(problem.render(s), end='')
+
+            # HACK once we've satisfied our next goal, we stop executing this action plan.
+            if next_goal(s):
+                if debug:
+                    print(f'* Halted execution of action plan because we satisfied goal "{next_goal.__name__}".')
+                break
+
+    return history, completed
+
+
+def solve_using_ordered_goal_subset(problem, k=1, debug=False, action_limit=30, shuffle=True):
     '''
     This function returns an action plan, considering a problem with goals that can be considered in order.
     '''
@@ -134,6 +183,7 @@ def solve_using_ordered_goal_subset(problem, k=1, debug=False, action_limit=30):
         actions = bfs_search(
             problem,
             root=s,
+            shuffle=shuffle,
             goal_test=lambda state: all(g(state) for g in subset_goals))
 
         # And take first action in this path.

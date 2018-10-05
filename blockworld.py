@@ -5,6 +5,22 @@ class Blockworld(MultiProblem):
     '''
     Blockworld is a problem where you stack blocks, one at a time.
 
+    Blockworld is a world with a set of blocks and a number of columns the blocks
+    can be in. Blocks on top of a column can be moved to other columns. The
+    goals in Blockworld often have to do with placing the blocks in order.
+
+    The state is represented as a list of columns, where the items are listed in
+    spatially ascending order. For example, this board state with 2 columns
+    (A standing alone and B on top of C):
+
+    ...
+    .B.
+    AC.
+
+    is represented by this state:
+
+    (('A',), ('C', 'B'), ())
+
     >>> s = (('B',), ('C', 'A'), ())
     >>> w = Blockworld(s, s)
     >>> w.result(s, ('A', 2))
@@ -53,12 +69,16 @@ class Blockworld(MultiProblem):
         >>> w = Blockworld(s, s)
         >>> w.result(s, ('B', 1))
         ((), ('A', 'C', 'B'), ())
+        >>> w.result(s, (0, 1)) # HACK adding on this variant of action representation
+        ((), ('A', 'C', 'B'), ())
         """
-        # TODO should we canonicalize this state in some way?
-        # Would make it easier to avoid repeating a state in search
         source_block, dest_col_idx = action
-        # TODO/PERF to avoid searching through columns, we should consider representing actions as source/dest columns
-        source_col_idx = next(colidx for colidx, col in enumerate(state) if col and col[-1] == source_block)
+        # HACK for performance reasons, we allow source_block to be an index, which avoids searching through columns.
+        if isinstance(source_block, int):
+            source_col_idx = source_block
+            source_block = state[source_col_idx][-1]
+        else:
+            source_col_idx = next(colidx for colidx, col in enumerate(state) if col and col[-1] == source_block)
         result = tuple(
             col[:-1] if colidx == source_col_idx else
             col + (source_block,) if colidx == dest_col_idx else

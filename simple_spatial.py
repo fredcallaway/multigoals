@@ -93,6 +93,7 @@ class SimpleSpatial(MultiProblem):
         def pred(state):
             _, visited_milestones = state
             return goal_milestone in visited_milestones
+        pred.__name__ = f'Visited milestone {goal_milestone}'
         return pred
 
 
