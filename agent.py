@@ -284,10 +284,12 @@ def A_Star(
     prioritized_nodes = [] # This is a heap
     def set_fscore(node, f):
         fScore[node] = f
-        # HACK by adding heap_entry, we ensure FIFO
-        # for LIFO we can add -heap_entry # HACK but this doesn't seem to work...
-        # for other kinds of orderings, we can add random #s?
-        heapq.heappush(prioritized_nodes, (f, heap_entry[0], node))
+        # HACK
+        # by adding +heap_entry, we ensure FIFO
+        # for LIFO we can add -heap_entry
+        # for other kinds of orderings, we can add random.random()
+        # TODO figure out why LIFO seems so important for some incidental efficiencies.
+        heapq.heappush(prioritized_nodes, (f, -heap_entry[0], node))
         heap_entry[0] += 1
 
     # For the first node, that value is completely heuristic.
@@ -295,6 +297,13 @@ def A_Star(
 
     while openSet:
         f, _, current = heapq.heappop(prioritized_nodes)
+        if current in closedSet:
+            # HACK this can happen when we have set the f-score for a state
+            # twice (thus adding it to queue) before we process it. Since we
+            # always process things in order of f-score, we can assume a
+            # second visit to this node can be ignored as it's about a path
+            # that is less optimal.
+            continue
         if problem.goal_test(current):
             return reconstruct_path(cameFrom, current)
 
@@ -329,7 +338,7 @@ def solve_using_ordered_goal_subset_astar(problem, k=1, debug=False, action_limi
         # the goals in order as all other goals that are currently satisfied will later have
         # to be unsatisfied to complete the problem. So, the number of all satisfied goals
         # is equal to or larger than the number returned by this function since we exclude goals
-        # that are not accomplished in order.
+        # that are not accomplished in proper order.
         # In the case of the Blockworld domain, this counts the number of blocks that are in
         # the stack we are building up.
         accomplished_count = 0
@@ -347,16 +356,12 @@ def solve_using_ordered_goal_subset_astar(problem, k=1, debug=False, action_limi
         # Find the list of k (or less) goals that have not been accomplished yet.
         next_goals = problem.goals[accomplished_count:min(accomplished_count+k, len(problem.goals))]
         assert len(next_goals) == k or accomplished_count + len(next_goals) == len(problem.goals)
+        if debug:
+            print('Current goals:', [g.__name__ for g in next_goals])
 
         def heuristic_cost(_, state):
             # Return the # of our ~k goals that are not accomplished. We ensure they're counted
             # in order.
-            k_accomplished = 0
-            for goal in next_goals:
-                if goal(state):
-                    k_accomplished += 1
-                else:
-                    break
             k_accomplished = _count_goals_accomplished_in_order(state, next_goals)
             return len(next_goals) - k_accomplished
 
@@ -377,7 +382,9 @@ def solve_using_ordered_goal_subset_astar(problem, k=1, debug=False, action_limi
             break
         subproblem, pred = make_ordered_k_goal_cost_heuristic(problem, st, k)
         next_goal = subproblem.goals[0]
-        actions, states = A_Star(subproblem, pred)
+        actions, states = A_Star(subproblem, pred, shuffle=shuffle)
+        if debug:
+            print(f'Planned to get to {states[-1]} via actions {actions}')
         for a, s in zip(actions, states[1:]):
             history.append((a, s))
             if debug:
