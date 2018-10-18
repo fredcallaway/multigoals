@@ -22,21 +22,29 @@ class Blockworld(MultiProblem):
     (('A',), ('C', 'B'), ())
 
     >>> s = (('B',), ('C', 'A'), ())
-    >>> w = Blockworld(s, s)
-    >>> w.result(s, ('A', 2))
+    >>> Blockworld(s, s).result(s, ('A', 2))
     (('B',), ('C',), ('A',))
     >>> w = Blockworld(s, s, canonicalize_states=True)
-    >>> w.initial
+    >>> w.initial # Initial has been modified since we're canonicalizing
     (('C', 'A'), ('B',), ())
     >>> w.result(s, ('A', 2))
     (('A',), ('B',), ('C',))
     '''
 
-    def __init__(self, initial, goals, canonicalize_states=False):
+    def __init__(
+        self, initial, goals,
+        canonicalize_states=False,
+        height_limits=None,
+        towers_of_hanoi=False,
+    ):
         if canonicalize_states:
             initial = _canonicalize_blockworld_state(initial)
         super().__init__(initial, goals)
         self.canonicalize_states = canonicalize_states
+        self.height_limits = height_limits
+        if height_limits is not None:
+            assert len(height_limits) == len(initial), 'Must supply same number of height limits as there are spaces.'
+        self.towers_of_hanoi = towers_of_hanoi
         # assert len(initial) == len(goal),\
         #    'In Blockworld, initial state and goal state must have the same number of places blocks can go.'
 
@@ -48,18 +56,39 @@ class Blockworld(MultiProblem):
         of the pair is the index of the column the block will be moved to.
 
         >>> s = (('A', 'C'), ('B',), ())
-        >>> w = Blockworld(s, s)
-        >>> w.actions(s)
+        >>> Blockworld(s, s).actions(s)
         [('C', 1), ('C', 2), ('B', 0), ('B', 2)]
+        >>> Blockworld(s, s, height_limits=(2, 2, 2)).actions(s)
+        [('C', 1), ('C', 2), ('B', 2)]
+        >>> s = (('A',), ('B',), ('C',))
+        >>> Blockworld(s, s).actions(s)
+        [('A', 1), ('A', 2), ('B', 0), ('B', 2), ('C', 0), ('C', 1)]
+        >>> Blockworld(s, s, towers_of_hanoi=True).actions(s)
+        [('A', 1), ('A', 2), ('B', 2)]
         """
+        def is_legal_move(source_col_idx, source_col, dest_col_idx, dest_col):
+            if self.towers_of_hanoi:
+                if dest_col:
+                    # HACK we assume that python's comparators suffice to compare column elements.
+                    # This will always work for numbers and single-letter strings.
+                    return source_col[-1] < dest_col[-1]
+                else:
+                    return True
+            elif self.height_limits is not None:
+                # This is a legal move if we are not at a height limit
+                return len(dest_col) < self.height_limits[dest_col_idx]
+            else:
+                # Otherwise, any move is fine!
+                return True
         return [
             (source_col[-1], dest_col_idx)
             for source_col_idx, source_col in enumerate(state)
             # We can only take from a column with some blocks.
             if source_col
-            for dest_col_idx in range(len(state))
+            for dest_col_idx, dest_col in enumerate(state)
             # We don't want to permit moving to the same column.
             if source_col_idx != dest_col_idx
+            if is_legal_move(source_col_idx, source_col, dest_col_idx, dest_col)
         ]
 
     def result(self, state, action):
@@ -94,8 +123,7 @@ class Blockworld(MultiProblem):
         """Returns a graphical depiction of the state as a string.
 
         >>> s = (('A', 'C'), ('B',))
-        >>> w = Blockworld(s, s)
-        >>> w.render(s)
+        >>> Blockworld(s, s).render(s)
         '..\\nC.\\nAB\\n'
         """
         max_height = sum(len(col) for col in state)
@@ -130,12 +158,16 @@ class Blockworld(MultiProblem):
             top_col, top_row = cls._findblock(state, top)
             bottom_col, bottom_row = cls._findblock(state, bottom)
             return top_col == bottom_col and top_row - 1 == bottom_row
+        pred.__name__ = f'{top} is on top of {bottom}'
 
         return pred
 
     @classmethod
-    def make_is_bottom_of_column_predicate(cls, block):
+    def make_is_bottom_of_column_predicate(cls, block, column_index=None):
         '''Returns a predicate that returns true when the block is the bottom block in some column.
+
+        Can optionally supply a specific column index to look at. This optional parameter is primarily
+        used for Tower of London tasks.
 
         >>> p = Blockworld.make_is_bottom_of_column_predicate('A')
         >>> p((('A', 'C'), ('B',)))
@@ -144,9 +176,22 @@ class Blockworld(MultiProblem):
         True
         >>> p((('B', 'A'), ('C',)))
         False
+        >>> p = Blockworld.make_is_bottom_of_column_predicate('A', column_index=0)
+        >>> p((('A', 'C'), ('B',)))
+        True
+        >>> p((('B',), ('A', 'C'), ()))
+        False
+        >>> p((('B', 'A'), ('C',)))
+        False
         '''
-        def pred(state):
-            return any(s[0] == block for s in state if s)
+        if column_index is None:
+            def pred(state):
+                return any(s[0] == block for s in state if s)
+            pred.__name__ = f'{block} is at the bottom of a column'
+        else:
+            def pred(state):
+                return state[column_index][0] == block
+            pred.__name__ = f'{block} is at the bottom of column {column_index}'
 
         return pred
 
@@ -196,11 +241,21 @@ if __name__ == '__main__':
     print('Total number of states:', len(seen))
     assert len(seen) == 60
 
-    # Implementing state canonicalization
+    # Counting with state canonicalization
     problem_canonicalize = Blockworld(((), ('A', 'C'), ('B',)), problem.goals, canonicalize_states=True)
     canonicalized = _visit(problem_canonicalize)
     print('Total unique number of states:', len(canonicalized))
     assert len(canonicalized) == 13
+
+    # Counting with ToH
+    problem_canonicalize = Blockworld(((), ('C', 'A'), ('B',)), problem.goals, towers_of_hanoi=True, canonicalize_states=True)
+    canonicalized = _visit(problem_canonicalize)
+    print('Total unique number of states for ToH:', len(canonicalized))
+
+    # Counting with ToL height limits
+    problem_canonicalize = Blockworld(((), ('A', 'C'), ('B',)), problem.goals, height_limits=(3, 2, 1), canonicalize_states=True)
+    canonicalized = _visit(problem_canonicalize)
+    print('Total unique number of states for ToL with height limits:', len(canonicalized))
 
     import doctest
     fail_count, test_count = doctest.testmod()
