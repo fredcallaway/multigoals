@@ -366,19 +366,30 @@ def _count_goals_accomplished_in_order(state, goals):
     return accomplished_count
 
 
-def make_ordered_k_goal_cost_heuristic(problem, start, k):
+def make_ordered_k_goal_cost_heuristic(problem, start, k, include_accomplished=True, debug=False):
     '''
     Given a problem and start state and limit on goal computation k, we generate a heuristic
     for A* search and next goals to consider that starts from that start state and has limited subset of
     goals at most size k to consider.
+
+    Can optionally ensure that previously accomplished goals will be included in heuristic counts
+    and list of next goals. This avoids undoing work that has already been completed. This isn't
+    always ideal, but depending on your goal structure, may be more optimal.
     '''
 
     # Find # of goals that are accomplished from our current start.
     accomplished_count = _count_goals_accomplished_in_order(start, problem.goals)
 
     # Find the list of k (or less) goals that have not been accomplished yet.
-    next_goals = problem.goals[accomplished_count:min(accomplished_count+k, len(problem.goals))]
-    assert len(next_goals) == k or accomplished_count + len(next_goals) == len(problem.goals)
+    next_goals = problem.goals[:min(accomplished_count+k, len(problem.goals))]
+    next_goal = next_goals[accomplished_count]
+
+    if debug:
+        print('Goals to solve:', [g.__name__ for g in next_goals[accomplished_count:]])
+
+    if not include_accomplished:
+        next_goals = next_goals[accomplished_count:]
+        assert len(next_goals) == k or accomplished_count + len(next_goals) == len(problem.goals)
 
     def heuristic_cost(_, state):
         # Return the # of our ~k goals that are not accomplished. We ensure they're counted
@@ -386,7 +397,10 @@ def make_ordered_k_goal_cost_heuristic(problem, start, k):
         k_accomplished = _count_goals_accomplished_in_order(state, next_goals)
         return len(next_goals) - k_accomplished
 
-    return next_goals, heuristic_cost
+    def goal_test(state):
+        return all(g(state) for g in next_goals)
+
+    return next_goal, goal_test, heuristic_cost
 
 
 def solve_using_ordered_goal_subset_astar(problem, k=1, debug=False, action_limit=30, shuffle=True):
@@ -401,14 +415,11 @@ def solve_using_ordered_goal_subset_astar(problem, k=1, debug=False, action_limi
         if problem.goal_test(st):
             completed = True
             break
-        next_goals, pred = make_ordered_k_goal_cost_heuristic(problem, st, k)
-        if debug:
-            print('Current goals:', [g.__name__ for g in next_goals])
-        next_goal = next_goals[0]
+        next_goal, goal_test, pred = make_ordered_k_goal_cost_heuristic(problem, st, k, debug=debug)
         actions, states = A_Star(
             problem, pred,
             start=st,
-            goal_test=lambda state: all(g(state) for g in next_goals),
+            goal_test=goal_test,
             shuffle=shuffle)
         if debug:
             print(f'Planned to get to {states[-1]} via actions {actions}')
