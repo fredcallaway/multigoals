@@ -252,11 +252,14 @@ def A_Star(
     problem,
     heuristic_cost_estimate,
     start=None,
+    goal_test=None,
     dist_between=lambda current, neighbor: 1,
     shuffle=True,
 ):
     if start is None:
         start = problem.initial
+    if goal_test is None:
+        goal_test = problem.goal_test
 
     # The set of nodes already evaluated
     closedSet = set()
@@ -271,17 +274,18 @@ def A_Star(
     cameFrom = {}
 
     # For each node, the cost of getting from the start node to that node.
-    gScore = defaultdict(lambda: float('inf')) # map with default value of Infinity
+    gScore = defaultdict(lambda: float('inf'))  # map with default value of Infinity
 
     # The cost of going from start to start is zero.
     gScore[start] = 0
 
     # For each node, the total cost of getting from the start node to the goal
     # by passing by that node. That value is partly known, partly heuristic.
-    fScore = defaultdict(lambda: float('inf')) # map with default value of Infinity
+    fScore = defaultdict(lambda: float('inf'))  # map with default value of Infinity
 
-    heap_entry = [0] # HACK making this an array to make modification easier
-    prioritized_nodes = [] # This is a heap
+    heap_entry = [0]  # HACK making this an array to make modification easier
+    prioritized_nodes = []  # This is a heap
+
     def set_fscore(node, f):
         fScore[node] = f
         # HACK
@@ -304,7 +308,7 @@ def A_Star(
             # second visit to this node can be ignored as it's about a path
             # that is less optimal.
             continue
-        if problem.goal_test(current):
+        if goal_test(current):
             return reconstruct_path(cameFrom, current)
 
         openSet.remove(current)
@@ -316,15 +320,15 @@ def A_Star(
         for a in actions:
             neighbor = problem.result(current, a)
             if neighbor in closedSet:
-                continue # Ignore the neighbor which is already evaluated.
+                continue  # Ignore the neighbor which is already evaluated.
 
             # The distance from start to a neighbor
             tentative_gScore = gScore[current] + dist_between(current, neighbor)
 
-            if neighbor not in openSet: # Discover a new node
+            if neighbor not in openSet:  # Discover a new node
                 openSet.add(neighbor)
             elif tentative_gScore >= gScore[neighbor]:
-                continue # This is not a better path.
+                continue  # This is not a better path.
 
             # This path is the best until now. Record it!
             cameFrom[neighbor] = (a, current)
@@ -332,43 +336,60 @@ def A_Star(
             set_fscore(neighbor, gScore[neighbor] + heuristic_cost_estimate(problem, neighbor))
 
 
+def _count_goals_accomplished_in_order(state, goals):
+    '''
+    We count the number of goals that have been accomplished. We intentionally only count
+    the goals in order as all other goals that are currently satisfied will later have
+    to be unsatisfied to complete the problem. So, the number of all satisfied goals
+    is equal to or larger than the number returned by this function since we exclude goals
+    that are not accomplished in proper order.
+    In the case of the Blockworld domain, this counts the number of blocks that are in
+    the stack we are building up.
+
+    >>> goals = [lambda x: x > 1, lambda x: x < 4, lambda x: x % 2 == 0]
+    >>> s=2
+    >>> _count_goals_accomplished_in_order(s, goals), sum(1 for g in goals if g(s))
+    (3, 3)
+    >>> s=3
+    >>> _count_goals_accomplished_in_order(s, goals), sum(1 for g in goals if g(s))
+    (2, 2)
+    >>> s=4
+    >>> _count_goals_accomplished_in_order(s, goals), sum(1 for g in goals if g(s))
+    (1, 2)
+    '''
+    accomplished_count = 0
+    for g in goals:
+        if g(state):
+            accomplished_count += 1
+        else:
+            break
+    return accomplished_count
+
+
+def make_ordered_k_goal_cost_heuristic(problem, start, k):
+    '''
+    Given a problem and start state and limit on goal computation k, we generate a heuristic
+    for A* search and next goals to consider that starts from that start state and has limited subset of
+    goals at most size k to consider.
+    '''
+
+    # Find # of goals that are accomplished from our current start.
+    accomplished_count = _count_goals_accomplished_in_order(start, problem.goals)
+
+    # Find the list of k (or less) goals that have not been accomplished yet.
+    next_goals = problem.goals[accomplished_count:min(accomplished_count+k, len(problem.goals))]
+    assert len(next_goals) == k or accomplished_count + len(next_goals) == len(problem.goals)
+
+    def heuristic_cost(_, state):
+        # Return the # of our ~k goals that are not accomplished. We ensure they're counted
+        # in order.
+        k_accomplished = _count_goals_accomplished_in_order(state, next_goals)
+        return len(next_goals) - k_accomplished
+
+    return next_goals, heuristic_cost
+
+
 def solve_using_ordered_goal_subset_astar(problem, k=1, debug=False, action_limit=30, shuffle=True):
-    def _count_goals_accomplished_in_order(state, goals):
-        # We count the number of goals that have been accomplished. We intentionally only count
-        # the goals in order as all other goals that are currently satisfied will later have
-        # to be unsatisfied to complete the problem. So, the number of all satisfied goals
-        # is equal to or larger than the number returned by this function since we exclude goals
-        # that are not accomplished in proper order.
-        # In the case of the Blockworld domain, this counts the number of blocks that are in
-        # the stack we are building up.
-        accomplished_count = 0
-        for g in goals:
-            if g(state):
-                accomplished_count += 1
-            else:
-                break
-        return accomplished_count
-
-    def make_ordered_k_goal_cost_heuristic(problem, start, k):
-        # Find # of goals that are accomplished from our current start.
-        accomplished_count = _count_goals_accomplished_in_order(start, problem.goals)
-
-        # Find the list of k (or less) goals that have not been accomplished yet.
-        next_goals = problem.goals[accomplished_count:min(accomplished_count+k, len(problem.goals))]
-        assert len(next_goals) == k or accomplished_count + len(next_goals) == len(problem.goals)
-        if debug:
-            print('Current goals:', [g.__name__ for g in next_goals])
-
-        def heuristic_cost(_, state):
-            # Return the # of our ~k goals that are not accomplished. We ensure they're counted
-            # in order.
-            k_accomplished = _count_goals_accomplished_in_order(state, next_goals)
-            return len(next_goals) - k_accomplished
-
-        subproblem = type(problem)(start, next_goals)
-
-        return subproblem, heuristic_cost
-
     st = problem.initial
     history = [(None, st)]
     completed = False
@@ -380,9 +401,15 @@ def solve_using_ordered_goal_subset_astar(problem, k=1, debug=False, action_limi
         if problem.goal_test(st):
             completed = True
             break
-        subproblem, pred = make_ordered_k_goal_cost_heuristic(problem, st, k)
-        next_goal = subproblem.goals[0]
-        actions, states = A_Star(subproblem, pred, shuffle=shuffle)
+        next_goals, pred = make_ordered_k_goal_cost_heuristic(problem, st, k)
+        if debug:
+            print('Current goals:', [g.__name__ for g in next_goals])
+        next_goal = next_goals[0]
+        actions, states = A_Star(
+            problem, pred,
+            start=st,
+            goal_test=lambda state: all(g(state) for g in next_goals),
+            shuffle=shuffle)
         if debug:
             print(f'Planned to get to {states[-1]} via actions {actions}')
         for a, s in zip(actions, states[1:]):

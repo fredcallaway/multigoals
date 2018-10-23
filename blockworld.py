@@ -41,9 +41,11 @@ class Blockworld(MultiProblem):
             initial = _canonicalize_blockworld_state(initial)
         super().__init__(initial, goals)
         self.canonicalize_states = canonicalize_states
+        if height_limits is None:
+            num_blocks = sum(len(col) for col in initial)
+            height_limits = (num_blocks,) * len(initial)
         self.height_limits = height_limits
-        if height_limits is not None:
-            assert len(height_limits) == len(initial), 'Must supply same number of height limits as there are spaces.'
+        assert len(self.height_limits) == len(initial), 'Must supply same number of height limits as there are spaces.'
         self.towers_of_hanoi = towers_of_hanoi
         # assert len(initial) == len(goal),\
         #    'In Blockworld, initial state and goal state must have the same number of places blocks can go.'
@@ -78,6 +80,7 @@ class Blockworld(MultiProblem):
                 # This is a legal move if we are not at a height limit
                 return len(dest_col) < self.height_limits[dest_col_idx]
             else:
+                # HACK this no longer happens...
                 # Otherwise, any move is fine!
                 return True
         return [
@@ -125,11 +128,16 @@ class Blockworld(MultiProblem):
         >>> s = (('A', 'C'), ('B',))
         >>> Blockworld(s, s).render(s)
         '..\\nC.\\nAB\\n'
+        >>> Blockworld(s, s, height_limits=(3, 1)).render(s)
+        '. \\nC \\nAB\\n'
         """
-        max_height = sum(len(col) for col in state)
+        max_height = max(self.height_limits)
         result = ''
-        for colidx in reversed(range(max_height)):
-            result += ''.join(col[colidx] if colidx < len(col) else '.' for col in state) + '\n'
+        for rowidx in reversed(range(max_height)):
+            result += ''.join(
+                col[rowidx] if rowidx < len(col) else
+                '.' if rowidx < self.height_limits[colidx] else ' '
+                for colidx, col in enumerate(state)) + '\n'
         return result
 
     @classmethod
@@ -183,6 +191,8 @@ class Blockworld(MultiProblem):
         False
         >>> p((('B', 'A'), ('C',)))
         False
+        >>> p(((), ('C',)))
+        False
         '''
         if column_index is None:
             def pred(state):
@@ -190,7 +200,8 @@ class Blockworld(MultiProblem):
             pred.__name__ = f'{block} is at the bottom of a column'
         else:
             def pred(state):
-                return state[column_index][0] == block
+                col = state[column_index]
+                return bool(col) and col[0] == block
             pred.__name__ = f'{block} is at the bottom of column {column_index}'
 
         return pred
