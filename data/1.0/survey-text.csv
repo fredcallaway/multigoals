@@ -1,0 +1,5 @@
+button_pressed,responses,rt,states,stimulus,time_elapsed,times,trial_type,pid
+,"{""Q0"":""Nothing."",""Q1"":""Very Good Job."",""Q2"":""Keep it up.""}",39852.0,,,656025,,survey-text,1
+,"{""Q0"":""no"",""Q1"":""Make it so it doesn't crash"",""Q2"":""took about 1/4 of the trials twice because the frame froze while moving blocks. Had to be super careful with placement to avoid having that happen again.""}",42050.0,,,352423,,survey-text,2
+,"{""Q0"":""no"",""Q1"":""no"",""Q2"":""the first time I tried, the blocks got stuck and didn't move the way they should have. restarting the experiment fixed it.""}",20401.0,,,278632,,survey-text,3
+,"{""Q0"":""no  not to confusing"",""Q1"":"""",""Q2"":""This was actually fun!""}",22241.0,,,447912,,survey-text,0

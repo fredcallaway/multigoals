@@ -1,0 +1,53 @@
+button_pressed,responses,rt,states,stimulus,time_elapsed,times,trial_type,pid
+0,,36427.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 17 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. Your task is to stack the
+blocks on the left so that they match the blocks on the right. The blocks
+on the right will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",36431,,html-button-response,1
+0,,1592.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 17 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. Your task is to stack the
+blocks on the left so that they match the blocks on the right. The blocks
+on the right will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",1596,,html-button-response,2
+0,,1035.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 17 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. Your task is to stack the
+blocks on the left so that they match the blocks on the right. The blocks
+on the right will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",1038,,html-button-response,3
+0,,16040.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 17 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. Your task is to stack the
+blocks on the left so that they match the blocks on the right. The blocks
+on the right will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",16042,,html-button-response,0
