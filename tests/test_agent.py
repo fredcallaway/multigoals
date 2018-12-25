@@ -1,4 +1,5 @@
 from simple_spatial import SimpleSpatial
+from blockworld import Blockworld
 import agent
 
 # This task is solved suboptimally unless you consider all 3 goals. So, we have a pretty coarse
@@ -86,3 +87,62 @@ def test_make_ordered_k_goal_cost_heuristic():
     assert h(p, range(10)) == 0
     assert goal_test(range(10))
     assert not goal_test(range(7, 10))
+
+
+def test_astar_return_all_equal_cost_paths():
+    problem = Blockworld(
+        (('D', 'A'), ('C', 'B'), ()),
+        [
+            Blockworld.make_above_predicate(top, bottom)
+            for (top, bottom) in [('C', 'D'), ('B', 'C'), ('A', 'B')]
+        ],
+    )
+    next_goal, goal_test, h = agent.make_ordered_k_goal_cost_heuristic(
+        problem, problem.initial, k=1, debug=True)
+    solutions = agent.A_Star(
+        problem,
+        h,
+        start=problem.initial,
+        goal_test=goal_test,
+        return_all_equal_cost_paths=True,
+        shuffle=False)
+    assert len(solutions) == 2
+    assert solutions[0][0] == [('A', 2), ('B', 2), ('C', 0)]
+    assert solutions[1][0] == [('B', 2), ('A', 2), ('C', 0)]
+
+
+def test_astar_return_all_equal_cost_paths_single_solution():
+    problem = Blockworld(
+        (('D', 'A'), ('C', 'B'), ()),
+        [
+            Blockworld.make_above_predicate(top, bottom)
+            for (top, bottom) in [('C', 'D'), ('B', 'C'), ('A', 'B')]
+        ],
+    )
+    next_goal, goal_test, h = agent.make_ordered_k_goal_cost_heuristic(
+        problem, problem.initial, k=2, debug=True)
+    solutions = agent.A_Star(
+        problem,
+        h,
+        start=problem.initial,
+        goal_test=goal_test,
+        return_all_equal_cost_paths=True,
+        shuffle=False)
+    assert len(solutions) == 1
+    assert solutions[0][0][0] == ('A', 2)
+
+
+def test_compute_action_path_probabilities():
+    assert agent.compute_action_path_probabilities([
+        ('A', 'B', 'C', 'D'),
+        ('A', 'B', 'C', 'D*'),
+        ('A', 'B*', 'C', 'D'),
+        ('A', 'B+', 'C', 'D'),
+        ('Z', 'Y', 'X', 'F'),
+    ]) == {
+        ('A', 'B', 'C', 'D'): 1/12,
+        ('A', 'B', 'C', 'D*'): 1/12,
+        ('A', 'B*', 'C', 'D'): 1/6,
+        ('A', 'B+', 'C', 'D'): 1/6,
+        ('Z', 'Y', 'X', 'F'): 1/2,
+    }

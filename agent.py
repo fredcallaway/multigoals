@@ -255,6 +255,7 @@ def A_Star(
     goal_test=None,
     dist_between=lambda current, neighbor: 1,
     shuffle=True,
+    return_all_equal_cost_paths=False,
 ):
     if start is None:
         start = problem.initial
@@ -299,6 +300,9 @@ def A_Star(
     # For the first node, that value is completely heuristic.
     set_fscore(start, heuristic_cost_estimate(problem, start))
 
+    if return_all_equal_cost_paths:
+        solutions = []
+
     while openSet:
         f, _, current = heapq.heappop(prioritized_nodes)
         if current in closedSet:
@@ -309,7 +313,14 @@ def A_Star(
             # that is less optimal.
             continue
         if goal_test(current):
-            return reconstruct_path(cameFrom, current)
+            if return_all_equal_cost_paths:
+                # If we have other solutions, we make sure this one has equal cost.
+                if solutions and gScore[solutions[0]] != gScore[current]:
+                    # Otherwise, we simply stop looking at solutions. below we return the solutions we found.
+                    break
+                solutions.append(current)
+            else:
+                return reconstruct_path(cameFrom, current)
 
         openSet.remove(current)
         closedSet.add(current)
@@ -334,6 +345,9 @@ def A_Star(
             cameFrom[neighbor] = (a, current)
             gScore[neighbor] = tentative_gScore
             set_fscore(neighbor, gScore[neighbor] + heuristic_cost_estimate(problem, neighbor))
+
+    if return_all_equal_cost_paths and solutions:
+        return [reconstruct_path(cameFrom, s) for s in solutions]
 
 
 def _count_goals_accomplished_in_order(state, goals):
@@ -439,6 +453,46 @@ def solve_using_ordered_goal_subset_astar(problem, k=1, debug=False, action_limi
         print('actions', len(history)-1, [a for a, s in history if a])
 
     return history, completed
+
+
+def compute_action_path_probabilities(paths, _current_step=0):
+    '''
+    This function takes a set of action paths and produces the probability of
+    each path assuming an agent took a random action at each choice point.
+
+    Returns dictionary with path (as tuple) mapping to probablity of path.
+    '''
+    if _current_step == 0:
+        assert len(paths), 'Paths were not passed in.'
+        # Make paths into tuples so we can have simple dict indexing
+        paths = [tuple(p) for p in paths]
+        # Assert the paths are distinct
+        assert len(set(paths)) == len(paths), 'Found identical paths.'
+        # Assert the paths are of the same length
+        assert all(len(p) == len(paths[0]) for p in paths), 'Found paths with mismatched length.'
+
+    # If we have one path, we always choose that path.
+    if len(paths) == 1:
+        return {paths[0]: 1}
+
+    # Otherwise, we group by different steps we can take at this current step.
+    grouped = {}
+    for path in paths:
+        grouped.setdefault(path[_current_step], []).append(path)
+
+    # We assume random selection among the possibilities.
+    random_p = 1./len(grouped)
+
+    result = {}
+    for start, same_start in grouped.items():
+        same_start_p = compute_action_path_probabilities(
+            same_start, _current_step=_current_step + 1)
+        # Probability of these actions at future steps is combined
+        # with probability of taking this step's action.
+        for path, p in same_start_p.items():
+            result[path] = random_p * p
+
+    return result
 
 
 if __name__ == '__main__':
