@@ -141,16 +141,6 @@ class Blockworld(MultiProblem):
         return result
 
     @classmethod
-    def _findblock(cls, state, block):
-        '''Returns the column index and row index for a block in a state.
-        '''
-        return next(
-            (colidx, rowidx)
-            for colidx, col in enumerate(state)
-            for rowidx, cell in enumerate(col)
-            if cell == block)
-
-    @classmethod
     def make_above_predicate(cls, top, bottom):
         '''Returns a predicate that returns true when the top block is above the bottom block in the same column.
 
@@ -161,11 +151,17 @@ class Blockworld(MultiProblem):
         False
         >>> p((('B', 'A'), ('C',)))
         True
+        >>> p((('D', 'B', 'A'), ('C',)))
+        True
+        >>> p((('B', 'A', 'D'), ('C',)))
+        True
         '''
         def pred(state):
-            top_col, top_row = cls._findblock(state, top)
-            bottom_col, bottom_row = cls._findblock(state, bottom)
-            return top_col == bottom_col and top_row - 1 == bottom_row
+            for col in state:
+                for idx in range(len(col) - 1):
+                    if col[idx] == bottom:
+                        return col[idx + 1] == top
+            return False
         pred.__name__ = f'{top} is on top of {bottom}'
 
         return pred

@@ -253,14 +253,20 @@ def A_Star(
     heuristic_cost_estimate,
     start=None,
     goal_test=None,
-    dist_between=lambda current, neighbor: 1,
+    dist_between=None,
     shuffle=True,
     return_all_equal_cost_paths=False,
+    depth_limit=None,
 ):
     if start is None:
         start = problem.initial
     if goal_test is None:
         goal_test = problem.goal_test
+    if dist_between is None:
+        dist_between = lambda current, neighbor: 1
+    else:
+        assert depth_limit is None, (
+            'Error: Current depth-limited search is implemented by assuming cost function is 1 so as to use g(state).')
 
     # The set of nodes already evaluated
     closedSet = set()
@@ -324,6 +330,26 @@ def A_Star(
 
         openSet.remove(current)
         closedSet.add(current)
+
+        # Depth limit is the number of nodes deep we will search. We skip nodes any deeper than limit.
+        # So for limit of 3, we will visit nodes 3 actions in from the root.
+        if depth_limit is not None and gScore[current] >= depth_limit:
+            assert gScore[current] == depth_limit, 'A* depth-limited should not descend past depth limit.'
+            if return_all_equal_cost_paths:
+                # Then we start gathering with logic akin to the above for equal cost paths.
+                # If we have other solutions, we make sure this one has equal fScore.
+                # We compare fScore since that's how we prioritize nodes and since our
+                # only sensible way to assess distance to the goal involves our heuristic
+                # of the cost.
+                # HACK determine if we simply prefer to compare the heuristic cost instead of fScore.
+                # HACK gScore above is really equal to fScore as h() is 0. so this is possibly equivalent logic??
+                if solutions and fScore[solutions[0]] != fScore[current]:
+                    # Otherwise, we simply stop looking at solutions. below we return the solutions we found.
+                    break
+                solutions.append(current)
+                continue  # We want to ensure we avoid searching any deeper.
+            else:
+                return reconstruct_path(cameFrom, current)
 
         actions = problem.actions(current)
         if shuffle:
