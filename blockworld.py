@@ -42,7 +42,7 @@ class Blockworld(MultiProblem):
         super().__init__(initial, goals)
         self.canonicalize_states = canonicalize_states
         if height_limits is None:
-            num_blocks = sum(len(col) for col in initial)
+            num_blocks = Blockworld.count_blocks(initial)
             height_limits = (num_blocks,) * len(initial)
         self.height_limits = height_limits
         assert len(self.height_limits) == len(initial), 'Must supply same number of height limits as there are spaces.'
@@ -202,6 +202,42 @@ class Blockworld(MultiProblem):
 
         return pred
 
+    @classmethod
+    def generate_tower_of_london_goals(cls, tol_state, column_index=None, debug=True):
+        '''
+        Returns subgoals to complete the tower of london task. The aim of the task is to
+        sort letters in alphabetical order in some column.
+
+        >>> _ = Blockworld.generate_tower_of_london_goals((('A', 'C'), ('B',)))
+        Goal 0: C is at the bottom of a column
+        Goal 1: B is on top of C
+        Goal 2: A is on top of B
+        >>> _ = Blockworld.generate_tower_of_london_goals((('A', 'C'), ('B',)), column_index=1)
+        Goal 0: C is at the bottom of column 1
+        Goal 1: B is on top of C
+        Goal 2: A is on top of B
+        '''
+        letters = sorted([l for col in tol_state for l in col])
+        bottom = Blockworld.make_is_bottom_of_column_predicate(letters[-1], column_index=column_index)
+        goals_with_clearing = [bottom] + [
+            Blockworld.make_above_predicate(top, bottom)
+            for top, bottom in reversed(list(zip(letters[:-1], letters[1:])))
+        ]
+        if debug:
+            for idx, g in enumerate(goals_with_clearing):
+                print('Goal {}: {}'.format(idx, g.__name__))
+        return goals_with_clearing
+
+    @classmethod
+    def count_blocks(cls, state):
+        '''
+        Returns number of blocks in this state.
+
+        >>> Blockworld.count_blocks(((), ('C',), ('A', 'B', 'F'), ('H',)))
+        5
+        '''
+        return sum(len(col) for col in state)
+
 
 def _canonicalize_blockworld_state(state):
     '''
@@ -217,6 +253,36 @@ def _canonicalize_blockworld_state(state):
     return tuple(sorted(
         state,
         key=lambda column: (-len(column), column[-1] if column else None)))
+
+
+def compute_action_for_state_change(state, next_state):
+    '''
+    Determines action taken to go from blockworld state to next_state.
+
+    >>> compute_action_for_state_change(((), ('A')), (('A'), ()))
+    ('A', 0)
+    >>> compute_action_for_state_change(((), ('B', 'A')), (('A'), ('B')))
+    ('A', 0)
+    '''
+    greater = [
+        idx for idx, (col, next_col) in enumerate(zip(state, next_state))
+        if len(next_col) > len(col)
+    ]
+    smaller = [
+        idx for idx, (col, next_col) in enumerate(zip(state, next_state))
+        if len(next_col) < len(col)
+    ]
+    msg = f'_compute_action {state} {next_state}'
+    assert len(greater) == 1, msg
+    assert len(smaller) == 1, msg
+
+    source_idx = smaller[0]
+    destination_idx = greater[0]
+    moved_letter = next_state[destination_idx][-1]
+
+    assert state[source_idx][-1] == moved_letter, msg
+
+    return (moved_letter, destination_idx)
 
 
 if __name__ == '__main__':
