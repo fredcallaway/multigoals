@@ -4,7 +4,7 @@ import random
 import heapq
 
 
-def bfs_search(problem, goal_test=None, root=None, shuffle=True):
+def bfs_search(problem, goal_test=None, root=None, shuffle=True, return_all_equal_cost_paths=False):
     '''Breadth-first search that returns a series of actions to accomplish a goal in a problem.
 
     Permits custom goal_test and root node, which we use to run tree search from intermediate
@@ -36,14 +36,30 @@ def bfs_search(problem, goal_test=None, root=None, shuffle=True):
     if goal_test(root):
         return []
 
+    if return_all_equal_cost_paths:
+        # For each node, the cost of getting from the start node to that node.
+        # HACK this is only used to enable the return of equal cost paths.
+        gScore = {}
+        # The cost of going from start to start is zero.
+        gScore[root] = 0
+        # Keeping track of the solutions found so far.
+        solutions = []
+
     while q:
         s = q.popleft()
         if s in seen:
             continue
 
         if goal_test(s):
-            # If we're at a goal state, we construct the set of actions to achieve this, given our root.
-            return construct_path(s, meta)
+            if return_all_equal_cost_paths:
+                # If we have other solutions, we make sure this one has equal cost.
+                if solutions and gScore[solutions[0]] != gScore[s]:
+                    # Otherwise, we simply stop looking at solutions. below we return the solutions we found.
+                    break
+                solutions.append(s)
+            else:
+                # If we're at a goal state, we construct the set of actions to achieve this, given our root.
+                return construct_path(s, meta)
 
         seen.add(s)
         actions = problem.actions(s)
@@ -55,6 +71,11 @@ def bfs_search(problem, goal_test=None, root=None, shuffle=True):
             if next_state not in meta and next_state not in seen:
                 q.append(next_state)
                 meta[next_state] = (s, a)  # create metadata for these nodes
+                if return_all_equal_cost_paths:
+                    gScore[next_state] = gScore[s] + 1
+
+    if return_all_equal_cost_paths and solutions:
+        return [construct_path(s, meta) for s in solutions]
 
 
 # Produce a backtrace of the actions taken to find the goal node, using the

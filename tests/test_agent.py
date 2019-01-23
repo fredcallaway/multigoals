@@ -2,6 +2,7 @@ from simple_spatial import SimpleSpatial
 from blockworld import Blockworld
 from counting_problem import CountingProblem
 import agent
+import functools
 
 # This task is solved suboptimally unless you consider all 3 goals. So, we have a pretty coarse
 # test of correctness in this file by making sure our k=2 solvers are suboptimal with a 9-move
@@ -181,6 +182,24 @@ def test_astar_depth_limit():
         return_all_equal_cost_paths=True,
         shuffle=False)
     final_states = [s[-1] for _, s in solutions]
+    assert sorted(final_states) == [
+        (0, 5),
+        (1, 4),
+        (2, 3),
+        (3, 2),
+        (4, 1),
+        (5, 0),
+    ]
+
+
+def test_bfs_return_all_equal_cost_paths():
+    problem = CountingProblem(goal_state_sum=5)
+    solutions = agent.bfs_search(problem, shuffle=False, return_all_equal_cost_paths=True)
+    # Computing states based on actions...
+    final_states = [
+        functools.reduce(problem.result, actions, problem.initial)
+        for actions in solutions
+    ]
     assert sorted(final_states) == [
         (0, 5),
         (1, 4),
