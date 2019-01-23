@@ -311,18 +311,19 @@ def A_Star(
     # by passing by that node. That value is partly known, partly heuristic.
     fScore = defaultdict(lambda: float('inf'))  # map with default value of Infinity
 
-    heap_entry = [0]  # HACK making this an array to make modification easier
+    heap_entry = 0
     prioritized_nodes = []  # This is a heap
 
     def set_fscore(node, f):
+        nonlocal heap_entry
         fScore[node] = f
         # HACK
         # by adding +heap_entry, we ensure FIFO
         # for LIFO we can add -heap_entry
         # for other kinds of orderings, we can add random.random()
         # TODO figure out why LIFO seems so important for some incidental efficiencies.
-        heapq.heappush(prioritized_nodes, (f, -heap_entry[0], node))
-        heap_entry[0] += 1
+        heapq.heappush(prioritized_nodes, (f, -heap_entry, node))
+        heap_entry += 1
 
     # For the first node, that value is completely heuristic.
     set_fscore(start, heuristic_cost_estimate(problem, start))
