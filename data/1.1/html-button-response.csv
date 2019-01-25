@@ -40,7 +40,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",9366,,html-button-response,28
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",9366,,html-button-response,33
 0,,18492.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -54,7 +54,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",18495,,html-button-response,37
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",18495,,html-button-response,42
 0,,34151.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -68,7 +68,21 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",34157,,html-button-response,34
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",34157,,html-button-response,39
+0,,3537.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",3541,,html-button-response,18
 0,,88896.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -83,20 +97,6 @@ You can only move the top block in each column.</p>
 <p>Here's an example with 3 blocks:</p>
 
 <p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",88900,,html-button-response,15
-0,,3537.0,,"<h1 id=""instructions"">Instructions</h1>
-
-<p>Thanks for accepting our HIT! In this HIT, you will solve block
-puzzles. There are 19 puzzles for you to solve.</p>
-
-<p>On each round, you will see two sets of blocks. There are three places where you
-can build a column of blocks. Your task is to stack the blocks in the left box
-to match the blocks in the right box. The blocks
-in the right box will always be in alphabetical order in the middle column.
-You can only move the top block in each column.</p>
-
-<p>Here's an example with 3 blocks:</p>
-
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",3541,,html-button-response,17
 0,,16681.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -110,7 +110,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",16683,,html-button-response,32
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",16683,,html-button-response,37
 0,,2357.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -124,7 +124,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",2359,,html-button-response,32
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",2359,,html-button-response,37
 0,,25340.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -152,7 +152,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",18489,,html-button-response,29
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",18489,,html-button-response,34
 0,,10830.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -166,7 +166,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",10832,,html-button-response,27
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",10832,,html-button-response,32
 0,,422820.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -194,7 +194,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",19928,,html-button-response,19
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",19928,,html-button-response,20
 0,,13832.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -236,7 +236,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",11494,,html-button-response,25
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",11494,,html-button-response,30
 0,,27989.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -264,7 +264,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",12815,,html-button-response,18
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",12815,,html-button-response,19
 0,,22255.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -320,7 +320,21 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",11073,,html-button-response,22
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",11073,,html-button-response,27
+0,,2089.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",2106,,html-button-response,21
 0,,10342.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -334,7 +348,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",10344,,html-button-response,38
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",10344,,html-button-response,43
 0,,18044.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -348,7 +362,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",18048,,html-button-response,33
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",18048,,html-button-response,38
 0,,33252.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -376,7 +390,21 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",16115,,html-button-response,23
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",16115,,html-button-response,28
+0,,9961.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",9962,,html-button-response,25
 0,,31583.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -418,7 +446,21 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",10088,,html-button-response,36
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",10088,,html-button-response,41
+0,,57045.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",57046,,html-button-response,17
 0,,22466.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -432,7 +474,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",22467,,html-button-response,30
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",22467,,html-button-response,35
 0,,11961.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -460,7 +502,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",39298,,html-button-response,21
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",39298,,html-button-response,24
 0,,10357.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -488,7 +530,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",105085,,html-button-response,26
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",105085,,html-button-response,31
 0,,15156.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -502,7 +544,21 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",15157,,html-button-response,20
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",15157,,html-button-response,22
+0,,38351.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",38358,,html-button-response,26
 0,,33257.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -516,7 +572,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",33261,,html-button-response,24
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",33261,,html-button-response,29
 0,,14468.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -530,7 +586,7 @@ You can only move the top block in each column.</p>
 
 <p>Here's an example with 3 blocks:</p>
 
-<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",14470,,html-button-response,35
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",14470,,html-button-response,40
 0,,21041.0,,"<h1 id=""instructions"">Instructions</h1>
 
 <p>Thanks for accepting our HIT! In this HIT, you will solve block
@@ -545,3 +601,17 @@ You can only move the top block in each column.</p>
 <p>Here's an example with 3 blocks:</p>
 
 <p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",21044,,html-button-response,12
+0,,21738.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",21738,,html-button-response,23
