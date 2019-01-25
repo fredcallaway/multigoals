@@ -1,36 +1,42 @@
 button_pressed,responses,rt,states,stimulus,time_elapsed,times,trial_type,pid
 ,"{""Q0"":""nothing was confusing or hard to understand"",""Q1"":""none"",""Q2"":""enjoyable""}",24026.0,,,1025407,,survey-text,5
 ,"{""Q0"":""There was nothing confusing about the hit."",""Q1"":""Add some more color to the interface."",""Q2"":""Great Study, hop""}",29284.0,,,1088700,,survey-text,4
-,"{""Q0"":""none"",""Q1"":""harder"",""Q2"":""none""}",13878.0,,,1267820,,survey-text,28
-,"{""Q0"":""No"",""Q1"":""No"",""Q2"":""No""}",5414.0,,,410976,,survey-text,37
-,"{""Q0"":""No, it was easy to understand."",""Q1"":""None, it was very clear."",""Q2"":""Thank you""}",37611.0,,,697730,,survey-text,34
-,"{""Q0"":""No"",""Q1"":""No"",""Q2"":""""}",5853.0,,,467849,,survey-text,17
-,"{""Q0"":""no"",""Q1"":""no"",""Q2"":""no""}",8262.0,,,470322,,survey-text,32
+,"{""Q0"":""none"",""Q1"":""harder"",""Q2"":""none""}",13878.0,,,1267820,,survey-text,33
+,"{""Q0"":""No"",""Q1"":""No"",""Q2"":""No""}",5414.0,,,410976,,survey-text,42
+,"{""Q0"":""No, it was easy to understand."",""Q1"":""None, it was very clear."",""Q2"":""Thank you""}",37611.0,,,697730,,survey-text,39
+,"{""Q0"":""No"",""Q1"":""No"",""Q2"":""""}",5853.0,,,467849,,survey-text,18
+,"{""Q0"":""no"",""Q1"":""no"",""Q2"":""no""}",6292.0,,,647757,,survey-text,15
+,"{""Q0"":""no"",""Q1"":""no"",""Q2"":""no""}",8262.0,,,470322,,survey-text,37
 ,"{""Q0"":"""",""Q1"":"""",""Q2"":""""}",2580.0,,,730041,,survey-text,0
-,"{""Q0"":""no"",""Q1"":""no"",""Q2"":""that was fun""}",12303.0,,,618643,,survey-text,29
-,"{""Q0"":""No."",""Q1"":""No."",""Q2"":""""}",7064.0,,,443052,,survey-text,27
+,"{""Q0"":""no"",""Q1"":""no"",""Q2"":""that was fun""}",12303.0,,,618643,,survey-text,34
+,"{""Q0"":""No."",""Q1"":""No."",""Q2"":""""}",7064.0,,,443052,,survey-text,32
 ,"{""Q0"":""No it was very straight forward"",""Q1"":""No I thought it was quite clear and concise as is"",""Q2"":""Little redundant ""}",33763.0,,,1012931,,survey-text,10
-,"{""Q0"":""no"",""Q1"":""no"",""Q2"":""""}",8312.0,,,753279,,survey-text,19
+,"{""Q0"":""no"",""Q1"":""no"",""Q2"":""""}",8312.0,,,753279,,survey-text,20
 ,"{""Q0"":""Nope."",""Q1"":""None that I can think of."",""Q2"":""""}",12766.0,,,299842,,survey-text,13
 ,"{""Q0"":""I didn't find anything unclear."",""Q1"":""No other suggestions. I thought the game ran smoothly."",""Q2"":""""}",54955.0,,,579202,,survey-text,2
 ,"{""Q0"":""No"",""Q1"":""No, it was well designed."",""Q2"":""Thanks for the HIT!  I did my best and hope the data is useful!""}",10637.0,,,513149,,survey-text,7
-,"{""Q0"":""no"",""Q1"":""yes"",""Q2"":""good""}",68527.0,,,853001,,survey-text,18
+,"{""Q0"":""no"",""Q1"":""yes"",""Q2"":""good""}",68527.0,,,853001,,survey-text,19
 ,"{""Q0"":""No"",""Q1"":""The interface worked well."",""Q2"":""The task was a bit too easy.""}",55766.0,,,467927,,survey-text,16
 ,"{""Q0"":""no"",""Q1"":""not really"",""Q2"":""nope""}",5970.0,,,437021,,survey-text,1
 ,"{""Q0"":""no"",""Q1"":"""",""Q2"":""""}",6144.0,,,356632,,survey-text,11
-,"{""Q0"":"""",""Q1"":"""",""Q2"":""""}",2964.0,,,461481,,survey-text,22
-,"{""Q0"":""No"",""Q1"":""No`"",""Q2"":""No""}",8134.0,,,388944,,survey-text,38
-,"{""Q0"":""No, it was simple."",""Q1"":""I can't really think of anything. "",""Q2"":""I've got nothing.""}",133195.0,,,498134,,survey-text,33
+,"{""Q0"":"""",""Q1"":"""",""Q2"":""""}",2964.0,,,461481,,survey-text,27
+,"{""Q0"":""No"",""Q1"":""No"",""Q2"":""No""}",11048.0,,,465569,,survey-text,21
+,"{""Q0"":""No"",""Q1"":""No`"",""Q2"":""No""}",8134.0,,,388944,,survey-text,43
+,"{""Q0"":""No, it was simple."",""Q1"":""I can't really think of anything. "",""Q2"":""I've got nothing.""}",133195.0,,,498134,,survey-text,38
 ,"{""Q0"":"""",""Q1"":"""",""Q2"":""""}",89593.0,,,539016,,survey-text,9
-,"{""Q0"":""Nothing was confusing or hard to understand."",""Q1"":""No suggestions. "",""Q2"":""No comments. ""}",20389.0,,,606295,,survey-text,23
+,"{""Q0"":""Nothing was confusing or hard to understand."",""Q1"":""No suggestions. "",""Q2"":""No comments. ""}",20389.0,,,606295,,survey-text,28
+,"{""Q0"":""No"",""Q1"":""Nope"",""Q2"":""Fun""}",12927.0,,,498175,,survey-text,25
 ,"{""Q0"":""No"",""Q1"":""No its perfect! "",""Q2"":""Thanks for the survey! ""}",14667.0,,,350468,,survey-text,6
 ,"{""Q0"":""No"",""Q1"":""No"",""Q2"":""Interesting and fun, thanks!""}",199849.0,,,627536,,survey-text,8
-,"{""Q0"":""no"",""Q1"":""no"",""Q2"":""thanks""}",4495.0,,,299393,,survey-text,36
-,"{""Q0"":""Nothing confusing."",""Q1"":""Simple and easy to use."",""Q2"":""No issues to report.""}",23060.0,,,309061,,survey-text,30
+,"{""Q0"":""no"",""Q1"":""no"",""Q2"":""thanks""}",4495.0,,,299393,,survey-text,41
+,"{""Q0"":""Nothing seemed particularly hard and the puzzle itself seemed pretty simple too."",""Q1"":""The interface is as simple and intuitive as it can get, I think. "",""Q2"":""""}",58679.0,,,451596,,survey-text,17
+,"{""Q0"":""Nothing confusing."",""Q1"":""Simple and easy to use."",""Q2"":""No issues to report.""}",23060.0,,,309061,,survey-text,35
 ,"{""Q0"":"""",""Q1"":"""",""Q2"":""""}",1494.0,,,393739,,survey-text,14
 ,"{""Q0"":""no"",""Q1"":""none"",""Q2"":""thanks""}",9640.0,,,558493,,survey-text,3
-,"{""Q0"":""no"",""Q1"":""none"",""Q2"":""none""}",16012.0,,,752277,,survey-text,26
-,"{""Q0"":""Everything was clear"",""Q1"":""They were easy to understand, thanks!"",""Q2"":""Thank you!""}",14876.0,,,480428,,survey-text,20
-,"{""Q0"":""Everything was clear and easy to understand"",""Q1"":""No"",""Q2"":""""}",13201.0,,,729262,,survey-text,24
-,"{""Q0"":""Nope."",""Q1"":""Interface is excellent."",""Q2"":""No other comments.""}",19276.0,,,310624,,survey-text,35
+,"{""Q0"":""no"",""Q1"":""none"",""Q2"":""none""}",16012.0,,,752277,,survey-text,31
+,"{""Q0"":""Everything was clear"",""Q1"":""They were easy to understand, thanks!"",""Q2"":""Thank you!""}",14876.0,,,480428,,survey-text,22
+,"{""Q0"":""NO"",""Q1"":""NO"",""Q2"":""GREAT""}",11488.0,,,802312,,survey-text,26
+,"{""Q0"":""Everything was clear and easy to understand"",""Q1"":""No"",""Q2"":""""}",13201.0,,,729262,,survey-text,29
+,"{""Q0"":""Nope."",""Q1"":""Interface is excellent."",""Q2"":""No other comments.""}",19276.0,,,310624,,survey-text,40
 ,"{""Q0"":"""",""Q1"":"""",""Q2"":""""}",2205.0,,,311365,,survey-text,12
+,"{""Q0"":""No, everything was clear."",""Q1"":"""",""Q2"":""""}",9337.0,,,570195,,survey-text,23
