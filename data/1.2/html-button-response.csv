@@ -1,0 +1,952 @@
+button_pressed,high_stakes,initial_points,multiplier,points,responses,rt,states,stimulus,time_elapsed,times,trial_type,pid
+0,,,,,,56176.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",56180,,html-button-response,20
+0,,,,,,18111.0,,"<h1 id=""points"">Points</h1>
+
+<p>You will begin each round with some number of points. It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>When a round is <span class=""Blockworld-highStakes"">High Stakes!</span>, every block
+will cost 3 points to move, but you will also start with more points.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",74295,,html-button-response,20
+0,,,,,,4410.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 266 points in this HIT. Your bonus for this HIT is <b>$2.66</b>!</p>",1482687,,html-button-response,20
+0,,,,,,415909.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",415913,,html-button-response,7
+0,,,,,,21896.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",21899,,html-button-response,36
+0,,,,,,18334.0,,"<h1 id=""points"">Points</h1>
+
+<p>You will begin each round with some number of points. It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>When a round is <span class=""Blockworld-highStakes"">High Stakes!</span>, every block
+will cost 3 points to move, but you will also start with more points.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",40236,,html-button-response,36
+0,,,,,,5825.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 367 points in this HIT. Your bonus for this HIT is <b>$3.67</b>!</p>",1258519,,html-button-response,36
+0,,,,,,38438.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",38443,,html-button-response,32
+0,,,,,,17631.0,,"<h1 id=""points"">Points</h1>
+
+<p>You will begin each round with some number of points. It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>When a round is <span class=""Blockworld-highStakes"">High Stakes!</span>, every block
+will cost 3 points to move, but you will also start with more points.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",56078,,html-button-response,32
+0,,,,,,5449.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 344 points in this HIT. Your bonus for this HIT is <b>$3.44</b>!</p>",1206881,,html-button-response,32
+0,,,,,,9360.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",9366,,html-button-response,44
+0,,,,,,486337.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",486340,,html-button-response,5
+0,,,,,,18492.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",18495,,html-button-response,54
+0,,,,,,34151.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",34157,,html-button-response,50
+0,,,,,,46277.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",46284,,html-button-response,37
+0,,,,,,30893.0,,"<h1 id=""points"">Points</h1>
+
+<p>You will begin each round with some number of points. It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>When a round is <span class=""Blockworld-highStakes"">High Stakes!</span>, every block
+will cost 3 points to move, but you will also start with more points.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",77181,,html-button-response,37
+0,,,,,,2716.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 324 points in this HIT. Your bonus for this HIT is <b>$3.24</b>!</p>",1371312,,html-button-response,37
+0,,,,,,3537.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",3541,,html-button-response,25
+0,,,,,,88896.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",88900,,html-button-response,19
+0,,,,,,16681.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",16683,,html-button-response,48
+0,,,,,,2357.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",2359,,html-button-response,48
+0,,,,,,25340.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",25344,,html-button-response,0
+0,,,,,,18482.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",18489,,html-button-response,45
+0,,,,,,10830.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",10832,,html-button-response,43
+0,,,,,,422820.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",422821,,html-button-response,12
+0,,,,,,19925.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",19928,,html-button-response,27
+0,,,,,,13832.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",13834,,html-button-response,15
+0,,,,,,24555.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",24557,,html-button-response,3
+0,,,,,,11491.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",11494,,html-button-response,41
+0,,,,,,27989.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",27994,,html-button-response,9
+0,,,,,,12809.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",12815,,html-button-response,26
+0,,,,,,22255.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",22257,,html-button-response,21
+0,,,,,,44700.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",44703,,html-button-response,1
+0,,,,,,10740.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",10743,,html-button-response,13
+0,,,,,,11070.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",11073,,html-button-response,35
+0,,,,,,2089.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",2106,,html-button-response,28
+0,,,,,,10342.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",10344,,html-button-response,55
+0,,,,,,18044.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",18048,,html-button-response,49
+0,,,,,,33252.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",33257,,html-button-response,11
+0,,,,,,16113.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",16115,,html-button-response,38
+0,,,,,,9961.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",9962,,html-button-response,33
+0,,,,,,31583.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",31584,,html-button-response,8
+0,,,,,,27064.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",27067,,html-button-response,10
+0,,,,,,10087.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",10088,,html-button-response,53
+0,,,,,,57045.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",57046,,html-button-response,24
+0,,,,,,22466.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",22467,,html-button-response,46
+0,,,,,,11961.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",11962,,html-button-response,16
+0,,,,,,39296.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",39298,,html-button-response,31
+0,,,,,,10357.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",10359,,html-button-response,4
+0,,,,,,105083.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",105085,,html-button-response,42
+0,,,,,,15156.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",15157,,html-button-response,29
+0,,,,,,38351.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",38358,,html-button-response,34
+0,,,,,,33257.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",33261,,html-button-response,39
+0,,,,,,14468.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",14470,,html-button-response,51
+0,,,,,,14462.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",14465,,html-button-response,18
+0,,,,,,8293.0,,"<h1 id=""points"">Points</h1>
+
+<p>You will begin each round with some number of points. It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>When a round is <span class=""Blockworld-highStakes"">High Stakes!</span>, every block
+will cost 3 points to move, but you will also start with more points.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",22759,,html-button-response,18
+0,,,,,,35556.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",35560,,html-button-response,40
+0,,,,,,27219.0,,"<h1 id=""points"">Points</h1>
+
+<p>You will begin each round with some number of points. It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>When a round is <span class=""Blockworld-highStakes"">High Stakes!</span>, every block
+will cost 3 points to move, but you will also start with more points.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",62780,,html-button-response,40
+0,,,,,,6437.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 241 points in this HIT. Your bonus for this HIT is <b>$2.41</b>!</p>",1655269,,html-button-response,40
+0,,,,,,14309.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",14312,,html-button-response,17
+0,,,,,,9060.0,,"<h1 id=""points"">Points</h1>
+
+<p>You will begin each round with some number of points. It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>When a round is <span class=""Blockworld-highStakes"">High Stakes!</span>, every block
+will cost 3 points to move, but you will also start with more points.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",23375,,html-button-response,17
+0,,,,,,21041.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",21044,,html-button-response,14
+0,,,,,,11204.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",11206,,html-button-response,23
+0,,,,,,11156.0,,"<h1 id=""points"">Points</h1>
+
+<p>You will begin each round with some number of points. It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>When a round is <span class=""Blockworld-highStakes"">High Stakes!</span>, every block
+will cost 3 points to move, but you will also start with more points.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",22364,,html-button-response,23
+0,,,,,,15225.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 326 points in this HIT. Your bonus for this HIT is <b>$3.26</b>!</p>",1793486,,html-button-response,23
+0,,,,,,21738.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 19 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",21738,,html-button-response,30
+0,,,,,,15987.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",15988,,html-button-response,6
+0,,,,,,11250.0,,"<h1 id=""points"">Points</h1>
+
+<p>You will begin each round with some number of points. It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>When a round is <span class=""Blockworld-highStakes"">High Stakes!</span>, every block
+will cost 3 points to move, but you will also start with more points.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",27240,,html-button-response,6
+0,,,,,,2921.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 262 points in this HIT. Your bonus for this HIT is <b>$2.62</b>!</p>",1060722,,html-button-response,6
+0,,,,,,316075.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",316079,,html-button-response,52
+0,,,,,,9622.0,,"<h1 id=""points"">Points</h1>
+
+<p>You will begin each round with some number of points. It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>When a round is <span class=""Blockworld-highStakes"">High Stakes!</span>, every block
+will cost 3 points to move, but you will also start with more points.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",325706,,html-button-response,52
+0,,,,,,3982.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 366 points in this HIT. Your bonus for this HIT is <b>$3.66</b>!</p>",1398925,,html-button-response,52
+0,,,,,,13865.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",13868,,html-button-response,22
+0,,,,,,14547.0,,"<h1 id=""points"">Points</h1>
+
+<p>You will begin each round with some number of points. It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>When a round is <span class=""Blockworld-highStakes"">High Stakes!</span>, every block
+will cost 3 points to move, but you will also start with more points.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",28416,,html-button-response,22
+0,,,,,,2013.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 281 points in this HIT. Your bonus for this HIT is <b>$2.81</b>!</p>",739163,,html-button-response,22
