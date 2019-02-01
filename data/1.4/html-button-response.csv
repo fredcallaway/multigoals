@@ -1,0 +1,1046 @@
+button_pressed,high_stakes,initial_points,multiplier,no_bonus,points,responses,rt,states,stimulus,time_elapsed,times,trial_type,pid
+0,,,,,,,15000.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",15005,,html-button-response,13
+0,,,,,,,39586.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",54594,,html-button-response,13
+0,,,,,,,2122.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 82 points in this HIT. Your bonus for this HIT is <b>$0.82</b>!</p>",1158178,,html-button-response,13
+0,,,,,,,12147.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",12152,,html-button-response,4
+0,,,,,,,2862.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",15021,,html-button-response,4
+0,,,,,,,1339.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 51 points in this HIT. Your bonus for this HIT is <b>$0.51</b>!</p>",720407,,html-button-response,4
+0,,,,,,,113554.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",113558,,html-button-response,27
+0,,,,,,,21384.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",134945,,html-button-response,27
+0,,,,,,,4038.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 89 points in this HIT. Your bonus for this HIT is <b>$0.89</b>!</p>",1227029,,html-button-response,27
+0,,,,,,,3174.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",3183,,html-button-response,14
+0,,,,,,,1284.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",4469,,html-button-response,14
+0,,,,,,,1468.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 52 points in this HIT. Your bonus for this HIT is <b>$0.52</b>!</p>",955296,,html-button-response,14
+0,,,,,,,2108.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",2111,,html-button-response,20
+0,,,,,,,1416.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",3528,,html-button-response,20
+0,,,,,,,738.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 63 points in this HIT. Your bonus for this HIT is <b>$0.63</b>!</p>",1483848,,html-button-response,20
+0,,,,,,,402881.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",402883,,html-button-response,19
+0,,,,,,,28107.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",430994,,html-button-response,19
+0,,,,,,,1456.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 103 points in this HIT. Your bonus for this HIT is <b>$1.03</b>!</p>",2473929,,html-button-response,19
+0,,,,,,,7101.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",7107,,html-button-response,28
+0,,,,,,,5710.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",12825,,html-button-response,28
+0,,,,,,,4649.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 88 points in this HIT. Your bonus for this HIT is <b>$0.88</b>!</p>",617324,,html-button-response,28
+0,,,,,,,9574.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",9580,,html-button-response,2
+0,,,,,,,6407.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",15990,,html-button-response,2
+0,,,,,,,1472.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 82 points in this HIT. Your bonus for this HIT is <b>$0.82</b>!</p>",801032,,html-button-response,2
+0,,,,,,,35855.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",35856,,html-button-response,17
+0,,,,,,,18422.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",54280,,html-button-response,17
+0,,,,,,,4046.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 90 points in this HIT. Your bonus for this HIT is <b>$0.90</b>!</p>",1719552,,html-button-response,17
+0,,,,,,,16821.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",16822,,html-button-response,16
+0,,,,,,,11796.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",28620,,html-button-response,16
+0,,,,,,,1745.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 85 points in this HIT. Your bonus for this HIT is <b>$0.85</b>!</p>",1027366,,html-button-response,16
+0,,,,,,,34320.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",34322,,html-button-response,15
+0,,,,,,,12913.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",47237,,html-button-response,15
+0,,,,,,,3619.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 83 points in this HIT. Your bonus for this HIT is <b>$0.83</b>!</p>",973368,,html-button-response,15
+0,,,,,,,14768.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",14770,,html-button-response,12
+0,,,,,,,20192.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",34964,,html-button-response,12
+0,,,,,,,1925.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 68 points in this HIT. Your bonus for this HIT is <b>$0.68</b>!</p>",1159672,,html-button-response,12
+0,,,,,,,23291.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",23293,,html-button-response,21
+0,,,,,,,30361.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",53655,,html-button-response,21
+0,,,,,,,4684.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 73 points in this HIT. Your bonus for this HIT is <b>$0.73</b>!</p>",712842,,html-button-response,21
+0,,,,,,,58438.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",58442,,html-button-response,22
+0,,,,,,,35969.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",94414,,html-button-response,22
+0,,,,,,,5896.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 98 points in this HIT. Your bonus for this HIT is <b>$0.98</b>!</p>",1381376,,html-button-response,22
+0,,,,,,,14262.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",14264,,html-button-response,24
+0,,,,,,,13346.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",27611,,html-button-response,24
+0,,,,,,,4521.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 80 points in this HIT. Your bonus for this HIT is <b>$0.80</b>!</p>",1013611,,html-button-response,24
+0,,,,,,,20875.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",20878,,html-button-response,11
+0,,,,,,,15917.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",36798,,html-button-response,11
+0,,,,,,,1842.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 74 points in this HIT. Your bonus for this HIT is <b>$0.74</b>!</p>",775563,,html-button-response,11
+0,,,,,,,65241.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",65248,,html-button-response,6
+0,,,,,,,29008.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",94257,,html-button-response,6
+0,,,,,,,11313.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 91 points in this HIT. Your bonus for this HIT is <b>$0.91</b>!</p>",1654336,,html-button-response,6
+0,,,,,,,44706.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",44711,,html-button-response,18
+0,,,,,,,109143.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",153857,,html-button-response,18
+0,,,,,,,27115.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",27123,,html-button-response,1
+0,,,,,,,4728.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",31863,,html-button-response,1
+0,,,,,,,3364.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 77 points in this HIT. Your bonus for this HIT is <b>$0.77</b>!</p>",1089747,,html-button-response,1
+0,,,,,,,33681.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",33683,,html-button-response,32
+0,,,,,,,21725.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",55410,,html-button-response,32
+0,,,,,,,8763.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 83 points in this HIT. Your bonus for this HIT is <b>$0.83</b>!</p>",1508897,,html-button-response,32
+0,,,,,,,69662.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",69666,,html-button-response,7
+0,,,,,,,29291.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",98960,,html-button-response,7
+0,,,,,,,3875.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 78 points in this HIT. Your bonus for this HIT is <b>$0.78</b>!</p>",1159769,,html-button-response,7
+0,,,,,,,20012.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",20015,,html-button-response,26
+0,,,,,,,22695.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",42712,,html-button-response,26
+0,,,,,,,2616.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 79 points in this HIT. Your bonus for this HIT is <b>$0.79</b>!</p>",1029022,,html-button-response,26
+0,,,,,,,13178.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",13179,,html-button-response,0
+0,,,,,,,8128.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",21309,,html-button-response,0
+0,,,,,,,3080.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 78 points in this HIT. Your bonus for this HIT is <b>$0.78</b>!</p>",538402,,html-button-response,0
+0,,,,,,,402897.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",402900,,html-button-response,10
+0,,,,,,,3010.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",405911,,html-button-response,10
+0,,,,,,,1863.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 86 points in this HIT. Your bonus for this HIT is <b>$0.86</b>!</p>",1533306,,html-button-response,10
+0,,,,,,,21377.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",21379,,html-button-response,8
+0,,,,,,,16044.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",37425,,html-button-response,8
+0,,,,,,,2811.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 75 points in this HIT. Your bonus for this HIT is <b>$0.75</b>!</p>",791040,,html-button-response,8
+0,,,,,,,12624.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",12627,,html-button-response,31
+0,,,,,,,2146.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",14773,,html-button-response,31
+0,,,,,,,1540.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 78 points in this HIT. Your bonus for this HIT is <b>$0.78</b>!</p>",1219357,,html-button-response,31
+0,,,,,,,22128.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",22132,,html-button-response,9
+0,,,,,,,25848.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",47981,,html-button-response,9
+0,,,,,,,4602.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 81 points in this HIT. Your bonus for this HIT is <b>$0.81</b>!</p>",534856,,html-button-response,9
+0,,,,,,,42786.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",42792,,html-button-response,30
+0,,,,,,,31322.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",74118,,html-button-response,30
+0,,,,,,,3682.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 88 points in this HIT. Your bonus for this HIT is <b>$0.88</b>!</p>",1111084,,html-button-response,30
+0,,,,,,,20872.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",20878,,html-button-response,29
+0,,,,,,,6587.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",27467,,html-button-response,29
+0,,,,,,,12092.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",12094,,html-button-response,23
+0,,,,,,,2736.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",14832,,html-button-response,23
+0,,,,,,,1536.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 60 points in this HIT. Your bonus for this HIT is <b>$0.60</b>!</p>",877994,,html-button-response,23
+0,,,,,,,6643.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",6689,,html-button-response,3
+0,,,,,,,4286.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",10978,,html-button-response,3
+0,,,,,,,3631.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",3637,,html-button-response,3
+0,,,,,,,3057.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",6695,,html-button-response,3
+0,,,,,,,2550.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 68 points in this HIT. Your bonus for this HIT is <b>$0.68</b>!</p>",1746090,,html-button-response,3
+0,,,,,,,6696.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",6697,,html-button-response,25
+0,,,,,,,28955.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",35652,,html-button-response,25
+0,,,,,,,1696.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 79 points in this HIT. Your bonus for this HIT is <b>$0.79</b>!</p>",1011590,,html-button-response,25
+0,,,,,,,5797.0,,"<h1 id=""instructions"">Instructions</h1>
+
+<p>Thanks for accepting our HIT! In this HIT, you will solve block
+puzzles. There are 35 puzzles for you to solve.</p>
+
+<p>On each round, you will see two sets of blocks. There are three places where you
+can build a column of blocks. Your task is to stack the blocks in the left box
+to match the blocks in the right box. The blocks
+in the right box will always be in alphabetical order in the middle column.
+You can only move the top block in each column.</p>
+
+<p>Here's an example with 3 blocks:</p>
+
+<p><img width=""355"" src=""static/images/blockworld.gif"" /></p>",5803,,html-button-response,5
+0,,,,,,,14185.0,,"<h1 id=""points"">Points</h1>
+
+<p>You can earn a bonus on some rounds. You will begin these rounds with some number of points.
+It costs 1 point to move a block.
+If you lose all your points, they won't go below 0, but you still have to finish the round.</p>
+
+<p>Some rounds will have no bonus, so the screen will say <b>No Bonus</b>.</p>
+
+<p>At the end of the HIT, we will convert the final points from each round into a bonus payment.
+You will earn $0.01 for each point.</p>
+
+<p>Here's an example:</p>
+
+<p><img width=""355"" src=""static/images/points.gif"" /></p>",19993,,html-button-response,5
+0,,,,,,,3719.0,,"<h1 id=""totalpoints"">Total Points</h1>
+
+<p>You got 72 points in this HIT. Your bonus for this HIT is <b>$0.72</b>!</p>",1251161,,html-button-response,5
