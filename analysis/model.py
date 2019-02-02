@@ -44,7 +44,13 @@ def make_goals(state):
     return blockworld.Blockworld.generate_tower_of_london_goals(state, column_index=1, debug=False)
 
 
-@lru_cache(maxsize=2048)
+@lru_cache(maxsize=2**14)
+def optimal_num_actions(s):
+    problem = blockworld.Blockworld(s, make_goals(s))
+    return len(agent.bfs_search(problem))
+
+
+@lru_cache(maxsize=int(2**30))
 def get_actions(state, k=None, depth_limit=None):
     goals_with_clearing = make_goals(state)
 
